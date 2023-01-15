@@ -1,4 +1,4 @@
-{
+module.exports = {
   // 不尾随分号
   "semi": false,
   // 使用单引号
