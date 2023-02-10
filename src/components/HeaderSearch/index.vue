@@ -4,7 +4,7 @@
       id="guide-search"
       class="search-icon"
       icon="search"
-      :color="$store.getters.cssVar.menuBg"
+      :color="$store.getters.cssVar.mainColor"
       @click.stop="onShowClick"
     />
     <el-select

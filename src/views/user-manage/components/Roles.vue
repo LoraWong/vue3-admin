@@ -24,8 +24,6 @@
 </template>
 
 <script setup>
-import {} from 'vuex'
-import {} from 'vue-router'
 import { ref, defineProps, defineEmits, watch } from 'vue'
 import { roleList } from '@/api/role'
 import { userRoles, updateRole } from '@/api/user-manage'

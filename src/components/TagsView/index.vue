@@ -8,8 +8,8 @@
         :class="isActive(tag) ? 'active' : ''"
         :to="{ path: tag.fullPath }"
         :style="{
-          backgroundColor: isActive(tag) ? $store.getters.cssVar.menuBg : '',
-          borderColor: isActive(tag) ? $store.getters.cssVar.menuBg : ''
+          backgroundColor: isActive(tag) ? $store.getters.cssVar.mainColor : '',
+          borderColor: isActive(tag) ? $store.getters.cssVar.mainColor : ''
         }"
         @contextmenu.prevent="openMenu($event, index)"
       >
@@ -116,8 +116,9 @@ onMounted(initSortable)
       height: 26px;
       line-height: 26px;
       border: 1px solid #d8dce5;
+      border-radius: 8px;
       color: #495060;
-      background: #fff;
+      /* background: #fff; */
       padding: 0 8px;
       font-size: 12px;
       margin-left: 5px;

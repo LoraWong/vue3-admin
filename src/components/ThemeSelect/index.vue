@@ -14,7 +14,7 @@
       <svg-icon
         id="guide-theme"
         icon="change-theme"
-        :color="$store.getters.cssVar.menuBg"
+        :color="$store.getters.cssVar.mainColor"
       />
     </el-tooltip>
   </div>

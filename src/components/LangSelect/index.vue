@@ -10,7 +10,7 @@
         <svg-icon
           id="guide-lang"
           icon="language"
-          :color="$store.getters.cssVar.menuBg"
+          :color="$store.getters.cssVar.mainColor"
         ></svg-icon>
       </el-tooltip>
     </div>

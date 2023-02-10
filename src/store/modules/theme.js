@@ -11,8 +11,8 @@ const mutations = {
   // 存储 主题色
   setMainColor(state, newColor) {
     state.mainColor = newColor
-    // 修改css变量 menuBg
-    state.variables.menuBg = newColor
+    // 修改css变量
+    state.variables.mainColor = newColor
     // 也可以在此时 存储 新的色值表！
     // generateColors(getItem(MAIN_COLOR))
     // 本地缓存

@@ -6,7 +6,7 @@
     }"
   >
     <el-calendar class="calendar" v-model="currentDate">
-      <template #dateCell="{ data }">
+      <template #date-cell="{ data }">
         <p
           :class="[
             data.isSelected ? 'is-selected' : '',

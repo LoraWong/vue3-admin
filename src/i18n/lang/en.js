@@ -4,6 +4,7 @@ export default {
     loginBtn: 'Login',
     usernameRule: 'Username is required',
     passwordRule: 'Password cannot be less than 6 digits',
+    loginSuccessTip: 'Welcome!',
     desc: `
     Test authority account:<br />
      Provide three kinds of authority accounts:<br />
@@ -193,7 +194,7 @@ export default {
     dayIncome: 'Daily return curve',
     unit: 'w',
     pieChartTitle: 'Regional marketing diagram',
-    cloudChartTitle: 'imooc Logo document Cloud',
+    cloudChartTitle: 'document Cloud',
     bmapChartTitle:
       'Revenue performance diagram（Map does not support internationalization）',
     tadayReceivable: 'Receivable today',

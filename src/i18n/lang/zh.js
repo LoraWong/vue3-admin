@@ -4,6 +4,7 @@ export default {
     loginBtn: '登录',
     usernameRule: '用户名为必填项',
     passwordRule: '密码不能少于6位',
+    loginSuccessTip: '登录成功！',
     desc: `
     测试权限账号：<br />
     提供三种权限账号：<br />
@@ -192,7 +193,7 @@ export default {
     dayIncome: '日收益曲线',
     unit: '万元',
     pieChartTitle: '大区营销图示',
-    cloudChartTitle: '慕课 logo 文档云',
+    cloudChartTitle: '文档云',
     bmapChartTitle: '营收业绩图示（地图不支持国际化）',
     tadayReceivable: '今日回款',
     tadayBalance: '今日结余',

@@ -12,5 +12,5 @@
   "subMenuHover": "color(primary tint(70%))",
   "subMenuBg": "color(primary tint(80%))",
   "menuHover": "color(primary tint(90%))",
-  "menuBg": "color(primary)"
+  "mainColor": "color(primary)"
 }

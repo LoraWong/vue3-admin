@@ -3,7 +3,7 @@
     <svg-icon
       id="guide-hamburger"
       :icon="icon"
-      :color="$store.getters.cssVar.menuBg"
+      :color="$store.getters.cssVar.mainColor"
       class="hamburger"
     ></svg-icon>
   </div>

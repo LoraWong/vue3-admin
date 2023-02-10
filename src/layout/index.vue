@@ -7,14 +7,14 @@
     <Sidebar
       id="guide-sidebar"
       class="sidebar-container"
-      :style="{ backgroundColor: $store.getters.cssVar.menuBg }"
+      :style="{ backgroundColor: $store.getters.cssVar.mainColor }"
     ></Sidebar>
 
     <div class="main-container">
       <div class="fixed-header">
         <!--顶部导航 Navbar -->
         <Navbar></Navbar>
-        <!-- tags -->
+        <!-- tagsView -->
         <TagsView id="guide-tags"></TagsView>
       </div>
       <!--内容区 AppMain -->
@@ -40,8 +40,9 @@ import TagsView from '@/components/TagsView'
 .app-wrapper {
   @include clearfix;
   position: relative;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+  background-color: #f3f6fd;
 }
 
 .fixed-header {

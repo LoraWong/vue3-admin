@@ -3,7 +3,7 @@
     <svg-icon
       id="guide-full"
       :icon="isFullscreen ? 'exit-fullscreen' : 'fullscreen'"
-      :color="$store.getters.cssVar.menuBg"
+      :color="$store.getters.cssVar.mainColor"
       @click="onToggle"
     />
   </div>

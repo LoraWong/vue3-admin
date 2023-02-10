@@ -2,5 +2,13 @@
   --el-avatar-background-color: none !important;
 }
 .el-card {
-  border: 0 !important;
+  // border: 0 !important;
+  border-radius: 10px !important;
 }
+
+
+.el-card.is-always-shadow {
+  box-shadow: none !important;
+}
+
+

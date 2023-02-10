@@ -4,7 +4,7 @@
       <svg-icon
         id="guide-start"
         icon="guide"
-        :color="$store.getters.cssVar.menuBg"
+        :color="$store.getters.cssVar.mainColor"
         @click.stop="onClick"
       />
     </el-tooltip>

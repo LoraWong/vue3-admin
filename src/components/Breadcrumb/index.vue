@@ -55,7 +55,7 @@ const onLinkClick = (item) => {
 }
 // 主题替换，hover颜色设置为主题颜色
 const store = useStore()
-const linkHoverColor = ref(store.getters.cssVar.menuBg)
+const linkHoverColor = ref(store.getters.cssVar.mainColor)
 </script>
 
 <style lang="scss" scoped>

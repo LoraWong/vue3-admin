@@ -120,7 +120,7 @@ import { watchSwitchLang } from '@/utils/i18n'
 import { ElMessageBox, ElMessage } from 'element-plus'
 import { useI18n } from 'vue-i18n'
 import ExportToExcel from './components/Export2Excel'
-import Roles from './components/roles'
+import Roles from './components/Roles'
 
 const i18n = useI18n()
 const router = useRouter()
