@@ -11,16 +11,15 @@
 
 <script>
 /* eslint-disable */
-/* eslint-enable */
+export default {
+  name: 'Screenfull'
+}
 </script>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import screenfull from 'screenfull'
 import { on } from 'events'
-export default {
-  name: 'Screenfull'
-}
 
 // 是否全屏
 const isFullscreen = ref(false)
