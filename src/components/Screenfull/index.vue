@@ -9,9 +9,10 @@
   </div>
 </template>
 
+<script>
 /* eslint-disable */
-<script></script>
 /* eslint-enable */
+</script>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'

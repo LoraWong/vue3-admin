@@ -18,9 +18,10 @@
   </div>
 </template>
 
+<script>
 /* eslint-disable */
-<script></script>
 /* eslint-enable */
+</script>
 
 <script setup>
 import SidebarMenu from './SidebarMenu'
