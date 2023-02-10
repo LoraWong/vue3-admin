@@ -8,7 +8,11 @@
     />
   </div>
 </template>
+
+/* eslint-disable */
 <script></script>
+/* eslint-enable */
+
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import screenfull from 'screenfull'

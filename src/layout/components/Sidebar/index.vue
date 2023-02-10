@@ -17,7 +17,11 @@
     </el-scrollbar>
   </div>
 </template>
+
+/* eslint-disable */
 <script></script>
+/* eslint-enable */
+
 <script setup>
 import SidebarMenu from './SidebarMenu'
 export default {
