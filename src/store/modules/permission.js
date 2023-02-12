@@ -24,9 +24,11 @@ const actions = {
       // find() 方法返回数组中满足提供的测试函数的第一个元素的值
       // filter() 方法创建给定数组一部分的浅拷贝，其包含通过所提供函数实现的测试的所有元素
       const route = privateRoutes.filter((item) => item.name === key) // 一个数组
+
       // 追加到数组
       routes.push(...route)
     })
+
     // 最后添加 不匹配路由进入 404
     // 注意！该配置必须在 所有路由指定之后
     routes.push(...anyRoutes)

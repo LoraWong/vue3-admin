@@ -44,6 +44,10 @@ const store = useStore()
 const isActive = (tag) => {
   return tag.path === route.path
 }
+
+// 鼠标移入的tag index
+const currentIndex = ref(-1)
+
 /**
  * 关闭 tag
  * @param {*} index 当前 tag索引号

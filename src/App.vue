@@ -30,6 +30,11 @@ watchSwitchLang(() => {
     store.dispatch('user/getUserInfo')
   }
 })
+
+// feature token
+if (!store.state.feature.token) {
+  store.dispatch('feature/featureLogin')
+}
 </script>
 
 <style lang="scss"></style>

@@ -5,6 +5,8 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 import installElementPlus from './plugins/element'
+import installElementPlusIcons from './plugins/element-icon'
+import 'windi.css'
 // 导入全局样式
 import './styles/index.scss'
 // 导入 SvgIcon
@@ -18,6 +20,7 @@ import installDirective from '@/directives'
 
 const app = createApp(App)
 installElementPlus(app)
+installElementPlusIcons(app)
 installIcons(app)
 installFilter(app)
 installDirective(app)

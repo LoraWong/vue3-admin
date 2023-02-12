@@ -32,7 +32,8 @@ export default {
     articleRanking: 'ArticleRanking',
     articleCreate: 'ArticleCreate',
     articleDetail: 'ArticleDetail',
-    articleEditor: 'ArticleEditor'
+    articleEditor: 'ArticleEditor',
+    imagesManage: 'ImagesManage'
   },
   toast: {
     switchLangSuccess: 'Switch Language Success'

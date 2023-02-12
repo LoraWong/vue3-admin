@@ -192,6 +192,19 @@ $cursor: black;
           caret-color: $cursor;
         }
       }
+
+      ::v-deep .el-input__inner {
+        box-shadow: none !important;
+
+        --el-select-input-focus-border-color: none !important;
+      }
+
+      // 处理 input 白色背景
+      ::v-deep .el-input__wrapper {
+        background: none !important;
+        box-shadow: none !important;
+        --el-select-input-focus-border-color: none !important;
+      }
     }
   }
 

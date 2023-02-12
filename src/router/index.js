@@ -1,20 +1,22 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import layout from '@/layout'
-// 导入 私有路由
+// 导入 私有路由(按照不同权限模块划分)
 import ArticleCreateRouter from './modules/ArticleCreate'
 import ArticleRouter from './modules/Article'
 import PermissionListRouter from './modules/PermissionList'
 import RoleListRouter from './modules/RoleList'
 import UserManageRouter from './modules/UserManage'
+// import ImagesRouter from './modules/Images'
 import store from '@/store'
 
 // 私有路由表（有权限
 export const privateRoutes = [
+  ArticleCreateRouter,
+  ArticleRouter,
   RoleListRouter,
   UserManageRouter,
-  PermissionListRouter,
-  ArticleCreateRouter,
-  ArticleRouter
+  PermissionListRouter
+  // ImagesRouter
 ]
 
 // 公开路由表（不限权
@@ -32,6 +34,18 @@ export const publicRoutes = [
         meta: {
           title: 'chart',
           icon: 'chart'
+        }
+      },
+      {
+        path: '/images',
+        // name: 'articleCreate',
+        component: () =>
+          import(
+            /* webpackChunkName: "permission-list" */ '@/views/images/index'
+          ),
+        meta: {
+          title: 'imagesManage',
+          icon: 'images'
         }
       },
       // 404

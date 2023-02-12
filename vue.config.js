@@ -16,6 +16,11 @@ module.exports = {
         target: 'https://api.imooc-admin.lgdsunday.club/',
         // target: 'http://127.0.0.1:3004/',
         changeOrigin: true // 是否跨域
+      },
+      '/feature-api': {
+        target: 'http://ceshi13.dishait.cn',
+        changeOrigin: true,
+        pathRewrite: (path) => path.replace(/^\/feature-api/, '') // 路径重写，真实接口的路径里没有 feature-api
       }
     }
   },
@@ -65,5 +70,11 @@ module.exports = {
   },
   configureWebpack: {
     plugins: [new NodePolyfillPlugin()]
-  }
+  },
+  pluginOptions: {
+    windicss: {
+      // see https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
+    },
+  },
+
 }

@@ -19,6 +19,8 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-undef': 'off',
+    'camelcase': 'off',
     'space-before-function-paren': 'off',
     'vue/no-export-in-script-setup': 'off',
     'vue/valid-v-slot': 'warn',

@@ -17,7 +17,7 @@ service.interceptors.request.use(
   // 成功
   (config) => {
     // 请求头
-    config.headers.icode = '71F25336EE9B2D00'
+    config.headers.icode = '38A93C7D63AB5AEE'
     // 因为获取用户信息需要对应的 token ，所以我们可以利用 axios 的 请求拦截器 对 token 进行统一注入
     if (store.getters.token) {
       // 判断 token是否超时

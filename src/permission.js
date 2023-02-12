@@ -16,7 +16,7 @@ router.beforeEach(async (to, from, next) => {
       if (!store.getters.hasUserInfo) {
         // 获取用户信息
         const { permission } = await store.dispatch('user/getUserInfo')
-        // 处理用户权限，筛选出 动态添加的路由（为什么要用await？？
+        // tag:添加动态路由：处理用户权限，筛选出 动态添加的路由（为什么要用await？？
         const filterRoutes = await store.dispatch(
           'permission/filterRoutes',
           permission.menus

@@ -1,6 +1,7 @@
 // 声明常量
 // token
 export const TOKEN = 'token'
+export const FEATURE_TOKEN = 'feature_token'
 
 // token 时间戳
 export const TIME_STAMP = 'timeStamp'
