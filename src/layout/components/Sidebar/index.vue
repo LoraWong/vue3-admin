@@ -20,14 +20,15 @@
 
 <script>
 /* eslint-disable */
+export default {
+  name: 'Sidebar'
+}
 </script>
 
 <script setup>
 /* eslint-enable */
 import SidebarMenu from './SidebarMenu'
-export default {
-  name: 'Sidebar'
-}
+
 </script>
 
 <style lang="scss" scoped>
