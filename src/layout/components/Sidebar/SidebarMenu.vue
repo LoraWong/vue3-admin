@@ -28,11 +28,18 @@ import SidebarItem from './SidebarItem.vue'
 
 const router = useRouter()
 // console.log(router.getRoutes())
-// 计算属性
+
+/**
+ * @description: // tag:根据路由表生成菜单
+ */
 const routes = computed(() => {
   // 去除重复的路由
   const fRoutes = filterRoutes(router.getRoutes())
-  // console.log(fRoutes)
+  console.log(
+    '🚀 ~ file: SidebarMenu.vue:38 ~ routes ~ router.getRoutes()',
+    router.getRoutes()
+  )
+  console.log(fRoutes)
   // 不满足 meta && meta.title && meta.icon 的路由不需要展示在menu中
   return generateMenus(fRoutes)
 })

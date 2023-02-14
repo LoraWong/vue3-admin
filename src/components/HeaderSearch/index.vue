@@ -141,7 +141,7 @@ watchSwitchLang(() => {
 
 <style lang="scss" scoped>
 .header-search {
-  font-size: 0 !important;
+  /* font-size: 0 !important; */
   .search-icon {
     cursor: pointer;
     font-size: 18px;
@@ -149,12 +149,13 @@ watchSwitchLang(() => {
   }
   .header-search-select {
     font-size: 18px;
-    transition: width 0.2s;
+    transition: all 0.2s;
     width: 0;
     overflow: hidden;
     background: transparent;
     display: inline-block;
     vertical-align: middle;
+    border-radius: 25px;
 
     ::v-deep .el-input__inner {
       border-radius: 0;
@@ -165,13 +166,17 @@ watchSwitchLang(() => {
       vertical-align: middle;
     }
   }
+
   &.show {
     .header-search-select {
       width: 210px;
       margin-left: 10px;
       border: 1px solid #d9d9d9;
-      border-radius: 25px;
     }
+  }
+
+  ::v-deep .el-select .el-input.is-focus .el-input__wrapper {
+    box-shadow: none !important;
   }
 }
 </style>

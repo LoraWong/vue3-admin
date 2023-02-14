@@ -22,7 +22,7 @@ export default {
   route: {
     profile: 'Profile',
     chart: 'Dashboard',
-    user: 'user',
+    user: 'Permission',
     excelImport: 'ExcelImport',
     userManage: 'EmployeeManage',
     userInfo: 'UserInfo',
@@ -33,7 +33,10 @@ export default {
     articleCreate: 'ArticleCreate',
     articleDetail: 'ArticleDetail',
     articleEditor: 'ArticleEditor',
-    imagesManage: 'ImagesManage'
+    imagesManage: 'ImagesManage',
+    components: 'Components',
+    FormComponents: 'FormComponents',
+    TableComponents: 'TableComponents'
   },
   toast: {
     switchLangSuccess: 'Switch Language Success'

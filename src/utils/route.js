@@ -1,11 +1,14 @@
-// 路由表处理
+// tag:路由表处理
 import path from 'path'
-// 所有子集路由
+
+// 获取所有子集路由(注意此方法 不适用于 二级以上路由，如果路由层级很多，需要递归处理)
 export const getChildrenRoutes = (routes) => {
   const result = []
   routes.forEach((route) => {
     if (route.children && route.children.length > 0) {
       result.push(...route.children) // route.children 是一个数组
+      // 递归
+      // result.push(...getChildrenRoutes(route.children))
     }
   })
   return result
@@ -15,6 +18,10 @@ export const getChildrenRoutes = (routes) => {
 export const filterRoutes = (routes) => {
   // 获取所有子路由
   const childrenRoutes = getChildrenRoutes(routes)
+  console.log(
+    '🚀 ~ file: route.js:18 ~ filterRoutes ~ childrenRoutes',
+    childrenRoutes
+  )
   // 根据子路由进行查重
   // filter() 利用所有使得 callbackFn 返回 true 或等价于 true 的值的元素创建一个新数组
   // 被定义为假值以外的任何值都为真值。（即所有除 false、0、-0、0n、""、null、undefined 和 NaN 以外的皆为真值）

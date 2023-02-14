@@ -11,6 +11,8 @@ import 'windi.css'
 import './styles/index.scss'
 // 导入 SvgIcon
 import installIcons from './icons'
+// 注册全局组件
+import lib from './lib'
 // 导入权限控制
 import './permission'
 // 全局属性
@@ -24,4 +26,4 @@ installElementPlusIcons(app)
 installIcons(app)
 installFilter(app)
 installDirective(app)
-app.use(store).use(router).use(i18n).mount('#app')
+app.use(store).use(router).use(i18n).use(lib).mount('#app')

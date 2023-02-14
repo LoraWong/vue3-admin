@@ -22,7 +22,7 @@ export default {
   route: {
     profile: '个人中心',
     chart: '首页',
-    user: '用户',
+    user: '权限',
     excelImport: 'Excel导入',
     userManage: '员工管理',
     userInfo: '员工信息',
@@ -33,7 +33,10 @@ export default {
     articleCreate: '创建文章',
     articleDetail: '文章详情',
     articleEditor: '文章编辑',
-    imagesManage: '图片管理'
+    imagesManage: '图片管理',
+    components: '组件',
+    FormComponents: '表单组件',
+    TableComponents: '表格组件'
   },
   toast: {
     switchLangSuccess: '切换语言成功'

@@ -13,7 +13,7 @@ const mutations = {
 }
 const actions = {
   /**
-   * 根据 权限数据 筛选动态路由
+   * 根据 权限数据 // tag:筛选动态路由
    * @param {*} menus 页面权限数据
    * @return {*} 筛选之后，获取到的动态路由，通过 addRoute添加到路由中
    */

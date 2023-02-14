@@ -6,7 +6,8 @@ import ArticleRouter from './modules/Article'
 import PermissionListRouter from './modules/PermissionList'
 import RoleListRouter from './modules/RoleList'
 import UserManageRouter from './modules/UserManage'
-// import ImagesRouter from './modules/Images'
+import ImagesRouter from './modules/Images'
+import GoodsRouter from './modules/Goods'
 import store from '@/store'
 
 // 私有路由表（有权限
@@ -16,7 +17,8 @@ export const privateRoutes = [
   RoleListRouter,
   UserManageRouter,
   PermissionListRouter
-  // ImagesRouter
+  // GoodsRouter,
+  // ImagesRouter,
 ]
 
 // 公开路由表（不限权
@@ -37,17 +39,32 @@ export const publicRoutes = [
         }
       },
       {
-        path: '/images',
-        // name: 'articleCreate',
-        component: () =>
-          import(
-            /* webpackChunkName: "permission-list" */ '@/views/images/index'
-          ),
+        path: '/components',
+        name: 'components',
         meta: {
-          title: 'imagesManage',
-          icon: 'images'
-        }
+          title: 'components',
+          icon: 'chart'
+        },
+        children: [
+          {
+            path: '/components/table',
+            component: () => import('@/views/table-components/index.vue'),
+            meta: {
+              title: 'TableComponents',
+              icon: 'chart'
+            }
+          },
+          {
+            path: '/components/form',
+            component: () => import('@/views/form-components/index.vue'),
+            meta: {
+              title: 'FormComponents',
+              icon: 'chart'
+            }
+          }
+        ]
       },
+
       // 404
       {
         path: '/404',

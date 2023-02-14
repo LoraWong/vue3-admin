@@ -9,13 +9,10 @@ export default {
     {
       path: '/images',
       // name: 'articleCreate',
-      component: () =>
-        import(
-          /* webpackChunkName: "permission-list" */ '@/views/images/index'
-        ),
+      component: () => import('@/views/images/index'),
       meta: {
-        title: 'permissionList',
-        icon: 'permission'
+        title: 'imagesManage',
+        icon: 'images'
       }
     }
   ]

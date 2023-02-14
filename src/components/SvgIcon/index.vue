@@ -6,7 +6,7 @@
       :style="[styleExternalIcon, { fill: color }]"
       class="svg-external-icon svg-icon"
       :class="className"
-    />
+    ></div>
     <!-- 内部图标 -->
     <svg
       v-else
@@ -18,17 +18,6 @@
       <use :xlink:href="iconName" />
     </svg>
   </div>
-  <!-- 外部图标 -->
-  <!-- <div
-    v-if="isExternal"
-    :style="styleExternalIcon"
-    class="svg-external-icon svg-icon"
-    :class="className"
-  /> -->
-  <!-- 内部图标 -->
-  <!-- <svg v-else class="svg-icon" :class="className" aria-hidden="true">
-    <use :xlink:href="iconName" />
-  </svg> -->
 </template>
 <script setup>
 import { isExternal as external } from '@/utils/validate'
@@ -76,6 +65,7 @@ const iconName = computed(() => `#icon-${props.icon}`)
   display: inline-block;
 }
 .svg-icon {
+  display: inline-block;
   width: 1em;
   height: 1em;
   vertical-align: -0.15em;

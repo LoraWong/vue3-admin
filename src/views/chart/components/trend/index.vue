@@ -32,6 +32,6 @@ getChartTrendData()
 
 <style lang="scss" scoped>
 .container {
-  height: 286px;
+  height: 320px;
 }
 </style>
